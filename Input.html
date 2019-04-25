@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input</title>
+</head>
+<link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+
+<script src="JS/script.js"></script>
+<body>
+<div class="topFooter">
+    <div class="topFooter1">
+        <div class="dropdown">
+            <a href="index.php?cmd=view" id="list-page-link" style="text-decoration: none">
+                <button class="dropbtn">HOME</button>
+            </a>
+        </div>
+        <div class="dropdown" onmouseover="openNav1()" onmouseout="closeNav1()">
+            <button class="dropbtn">INFO</button>
+            <div class="dropdown-content" id="my_drop_down1">
+                <a href="index.php?cmd=add" id="add-page-link">Add New</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="inputTable" style="padding: 20px">
+
+    <form method="post" action="index.php?cmd=add">
+        Eesnimi:
+        <br>
+        <input type="text" name="firstName" id="firstName"/>
+        <br>
+        Perenimi:
+        <br>
+        <input type="text" name="lastName"/>
+        <br>
+        Telefon:
+        <br>
+        <input type="text" name="phone"/>
+        <input type="text" name="phone1"/>
+        <input type="text" name="phone2"/>
+        <input type="text" name="phone3"/>
+        <br><br>
+        <input name="submitButton" type="submit" formmethod="post" value="Add" id="buttonId"/>
+    </form>
+    <div class="footer">
+        <span class="footer1">Veebitehnoloogiad 0000</span>
+    </div>
+</div>
+</body>
+</html>

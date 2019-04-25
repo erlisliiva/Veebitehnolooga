@@ -1,0 +1,135 @@
+#table {
+    padding: 4px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+#buttonId:hover {
+    border-color: rgba(145, 145, 145, 0.85);
+    background-color: #959595;
+
+}
+
+th {
+    border-bottom: 1px solid;
+    border-color: rgba(0, 0, 0, 0.5);
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+#errorMessage:hover {
+    opacity: 0.9;
+}
+
+#errorMessage {
+    color: #000000;
+    border: 1px solid grey;
+    position: absolute;
+    top: 80px;
+    left: 360px;
+    overflow: auto;
+    background-color: rgba(255, 130, 45, 0.85);
+    padding-right: 10px;
+}
+
+td {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+body {
+    padding-top: 20px;
+    padding-left: 25px;
+    background-color: #ffffff;
+}
+
+a {
+    padding-left: 20px;
+    padding-right: 20px;
+    /*border: 2px solid black;*/
+}
+
+#my_drop_down, #my_drop_down1, #my_drop_down2, #my_drop_down3 {
+    overflow: hidden;
+}
+
+.dropbtn {
+    cursor: pointer;
+    background-color: #919191;
+    color: rgba(255, 255, 255, 0.87);
+    padding-left: 20px;
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #fcf2ff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    cursor: pointer;
+    position: absolute;
+    overflow-x: hidden;
+    height: 0;
+    background-color: rgb(149, 149, 149);
+    /*z-index: 1;*/
+    width: 158px;
+    transition: 0.3s;
+}
+
+.dropdown-content:hover {
+    background-color: rgb(124, 120, 137);
+    border: 1px solid grey;
+
+}
+
+.dropdown-content a {
+    overflow-x: hidden;
+    /*transition: 0.5s;*/
+    color: #ffffff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.63);
+    transition: 0.1s;
+    color: white;
+
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: #959595;
+    text-align: right;
+
+}
+
+.footer1 {
+    color: #000000;
+}
+
+.topFooter {
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgb(145, 145, 145);
+    text-align: center;
+
+}
+#inputTable{
+    margin-top: 50px;
+}
+

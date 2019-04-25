@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<link rel="stylesheet" href="CSS/style.css" type="text/css"/>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="JS/script.js"></script>
+
+<title>Main</title>
+
+<body id="mainBody">
+
+
+<div class="topFooter">
+    <div class="topFooter1">
+        <div class="dropdown">
+            <a href="index.php?cmd=view" id="list-page-link" style="text-decoration: none">
+                <button class="dropbtn">HOME</button>
+            </a>
+        </div>
+        <div class="dropdown" onmouseover="openNav1()" onmouseout="closeNav1()">
+            <button class="dropbtn">INFO</button>
+            <div class="dropdown-content" id="my_drop_down1">
+                <a href="index.php?cmd=add" id="add-page-link">Add New</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="padding: 20px; margin-top: 50px" >
+
+    <table id="table">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Phone</th>
+        </tr>
+        <tr tpl-foreach="$items as $item">
+            <td>
+                {{ $item->firstName }}
+            </td>
+            <td>
+                {{ $item->lastName }}
+            </td>
+            <td>
+                {{ $item->getAllPhonesTogether() }}
+            </td>
+        </tr>
+    </table>
+    <div class="footer">
+        <span class="footer1">Veebitehnoloogiad 0000</span>
+    </div>
+</div>
+</body>
+</html>
